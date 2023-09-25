@@ -20,6 +20,10 @@ serve: ## Compiles and hot-reloads for development
 build: ## Compiles and minifies for production
 	$(NPM) run build
 
+.PHONY: lint
+lint: ## Lints and fixes files
+	$(NPM) run lint
+
 .PHONY: logs
 logs: ## Output the logs of local containers
 	$(DOCKER_COMPOSE) logs -f
