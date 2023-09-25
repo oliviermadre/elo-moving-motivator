@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  dev-server:
+    restart: always
+    image: node:19.5-slim
+    working_dir: /app
+    volumes:
+      - ./:/app
